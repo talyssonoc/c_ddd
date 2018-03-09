@@ -1,11 +1,14 @@
 #include "min_unit.h"
 
 #include "domain/student/student_test.c"
+#include "infra/student/student_repository_test.c"
 
 int tests_run = 0;
 
 static char * all_tests() {
   mu_run_test(test_domain_student_new_student);
+  mu_run_test(test_infra_student_new_student_repository);
+  mu_run_test(test_infra_student_student_repository_add);
   return 0;
 }
 

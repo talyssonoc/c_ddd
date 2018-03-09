@@ -5,9 +5,9 @@ MAIN_FILE = ./main.c
 MAIN_BIN = ./enrollment_system
 COMPILATION_ARGS = -o $(MAIN_BIN) $(SOURCE_FILES) $(MAIN_FILE)
 
-TEST_FILES = $(wildcard ./test/**/**/*.c ./test/test.c)
+TEST_FILE = ./test/test.c
 TEST_BIN = ./enrollment_system_tests
-TEST_ARGS = -o $(TEST_BIN) $(SOURCE_FILES) $(TEST_FILES)
+TEST_ARGS = -o $(TEST_BIN) $(SOURCE_FILES) $(TEST_FILE)
 
 compile:
 	gcc $(COMPILATION_ARGS)
